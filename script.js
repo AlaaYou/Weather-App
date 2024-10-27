@@ -14,7 +14,7 @@ async function fetchWeather(location) {
 //Display the weather
 function dispplayWeather(data) {
   console.log(data);
-  //select the  DOM
+  //select DOM
   const weatherDisplay = document.getElementById("weather-display");
   const temperature = document.getElementById("temperature");
   const condition = document.getElementById("condition");
@@ -32,7 +32,7 @@ function toggleElementVisibility(id, show) {
   const element = document.getElementById(id);
   element.style.display = show ? "block" : "none";
 }
-//DOM content Loaded
+//DOM content
 document.addEventListener("DOMContentLoaded", () => {
   const searchButton = document.getElementById("search-button");
   const locationInput = document.getElementById("location-input");
